@@ -1,0 +1,51 @@
+.comment-wrapper
+  text-align: left
+  margin-bottom: 20px
+  padding: 10px
+  transition: all .3s ease-in-out
+  .comment-box
+    //border: 1px solid #858585
+    margin-bottom: 15px
+    padding: 1rem
+    border-radius: 15px
+    word-break: break-word
+    -webkit-box-shadow: -2px 4px 11px -1px rgba(0,0,0,0.29)
+    -moz-box-shadow: -2px 4px 11px -1px rgba(0,0,0,0.29)
+    box-shadow: -2px 4px 11px -1px rgba(0,0,0,0.29)
+    overflow: hidden
+    div
+      margin-bottom: 5px!important
+    @media screen and (max-width: 352px)
+      margin-left: 0!important
+
+      padding: .5rem
+    &__date
+      display: inline-block
+      font-size: 13px
+      width: 100%
+    &__avatar
+      flex: 0 0 40px
+      height: 40px
+      border-radius: 50%
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center top
+      overflow: hidden
+      margin-right: 15px
+    &__message
+      word-break: break-word
+      font-size: 13px
+      max-height: 100px
+      overflow: auto
+      width: 100%
+      @media screen and (max-width: 352px)
+        overflow: auto
+        padding: 5px 0
+    &__preview-box
+      width: 50px
+      margin: 5px
+.users-comment__wrapper
+  .comment-box
+    border: initial
+    background-color: #858585
+    margin-left: 15px
